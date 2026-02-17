@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UPI Payment | Pankaj Sah</title>
+
+<style>
+  body{
+    margin:0;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:linear-gradient(120deg,#0b3c5d,#1e88e5);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .card{
+    background:#f8f2d1;
+    max-width:420px;
+    width:92%;
+    border-radius:22px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    padding:30px 25px 35px;
+    text-align:center;
+  }
+  .logo{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#92fc84;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    font-weight:700;
+    color:#1e88e5;
+    margin:-65px auto 15px;
+    box-shadow:0 6px 18px rgba(0,0,0,.2);
+  }
+  h1{
+    margin:10px 0 5px;
+    font-size:24px;
+    color:#00070c;
+  }
+  .subtitle{
+    font-size:15px;
+    color:#666;
+    margin-bottom:20px;
+  }
+  .qr{
+    width:260px;
+    height:260px;
+    border-radius:16px;
+    border:1px solid #eee;
+  }
+  .name{
+    margin-top:18px;
+    font-size:18px;
+    font-weight:600;
+    color:#222;
+  }
+  .upi{
+    font-size:14px;
+    color:#555;
+    margin-top:4px;
+  }
+  .paybtn{
+    display:block;
+    margin:22px auto 0;
+    padding:14px 30px;
+    background:#00c853;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:700;
+    width:80%;
+  }
+  .apps{
+    margin-top:18px;
+    font-size:13px;
+    color:#777;
+  }
+  footer{
+    margin-top:18px;
+    font-size:12px;
+    color:#999;
+  }
+</style>
+</head>
+
+<body>
+
+<header style="position:fixed;top:0;left:0;width:100%;background:#031b2a;color:#fff;text-align:center;padding:15px 10px;font-size:20px;font-weight:700;z-index:1000;box-shadow:0 4px 12px rgba(0,0,0,.3)">UPI Payment PortaL <br>
+  <b>BHAGWAN ENTERPRISE</b>
+</header>
+
+
+<div class="card" style="margin-top:80px">
+  <div class="logo">₹</div>
+
+  <h1>UPI Payment</h1>
+  <div class="subtitle">Fast • Secure • Easy</div>
+
+  <img class="qr"
+    src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=upi://pay?pa=sahpankaj5279@oksbi%26cu=INR"
+    alt="UPI QR Code" />
+
+  <div class="name">Pankaj Sah</div>
+  <div class="upi">UPI ID: sahpankaj5279@oksbi</div>
+
+  <a class="paybtn"
+     href="upi://pay?pa=sahpankaj5279@oksbi&cu=INR">
+     Pay Now
+  </a>
+
+  <div class="apps">
+    Works with Google Pay • PhonePe • Paytm • BHIM
+  </div>
+
+  <footer>
+    © 2026 Secure UPI Payment
+  </footer>
+</div>
+
+</body>
+</html>
