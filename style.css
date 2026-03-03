@@ -16,13 +16,13 @@
 
     /* ===== HEADER ===== */
     header{
-      background:linear-gradient(120deg,#0b3c5d,#1e88e5);
+      background:linear-gradient(120deg,#082c44,#165994);
       color:#fff;
     }
     .hero{
       max-width:1200px;
       margin:auto;
-      padding:40px 20px 60px;
+      padding:20px 10px 30px;
     }
     .topbar{
       display:flex;
@@ -37,18 +37,17 @@
       letter-spacing:.5px;
     }
     nav a{
-      color:#fff;
+      color:#ffffff;
       text-decoration:none;
       margin-left:20px;
       font-weight:600;
     }
     .hero h1{
+      color: white;
       font-size:46px;
       margin:20px 0 15px;
       font-weight:800;
-    }
-    .hero h2{
-      color:white;
+   
     }
     .hero p{
       font-size:18px;
@@ -64,8 +63,8 @@
       text-decoration:none;
       margin-right:15px;
     }
-    .btn.call{background:#fff;color:var(--primary)}
-    .btn.pay{background:var(--accent);color:#063d1f}
+    .btn.call{background:#2aeb4a;color:white}
+    .btn.pay{background:rgb(226, 141, 61);color:#ffffff}
 
     /* ===== COMMON ===== */
     section{
@@ -85,27 +84,58 @@
     .title p{color:#555;font-size:16px}
 
     /* ===== SERVICES ===== */
-    .services{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:30px;
-    }
-    .service{
-      background:#fff;
-      border-radius:18px;
-      overflow:hidden;
-      box-shadow:0 10px 25px rgba(0,0,0,.12);
-      transition:.3s;
-    }
-    .service:hover{transform:translateY(-8px)}
-    .service img{
-      width:100%;
-      height:200px;
-      object-fit:cover;
-    }
-    .service h3{margin:20px;color:var(--primary)}
-    .service p{margin:0 20px 25px;color:#070101;font-size:15px}
+   .services{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);   /* PC = 4 cards */
+  gap: 25px;
+  max-width: 1200px;   /* important for PC */
+  margin: auto;        /* center align */
+}
 
+/* Tablet */
+@media (max-width: 992px){
+  .services{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  .services{
+    grid-template-columns: repeat(2, 1fr);
+    gap:15px;
+  }
+}
+
+/* Card Design */
+.service{
+  background:#fff;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 6px 18px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.service:hover{
+  transform: translateY(-6px);
+}
+
+.service img{
+  width:100%;
+  height:200px;  /* PC me better look */
+  object-fit:cover;
+  display:block;
+}
+
+.service h3{
+  margin:15px;
+  font-size:17px;
+}
+
+.service p{
+  margin:0 15px 20px;
+  font-size:14px;
+}
     /* ===== FIXED CHARGES ===== */
     .charges{
       background:#fff;
@@ -174,7 +204,7 @@
       .about{grid-template-columns:1fr}
       .hero h1{font-size:36px}
     }
-     body {
+     table {
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
             padding: 20px;
